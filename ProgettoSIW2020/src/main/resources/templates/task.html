@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ProgettoSIW</title>
+</head>
+<body>
+	<h1 th:text="${task.name}"></h1>
+	<h4 th:text="${task.description}" style="color: gray"></h4>
+		
+		<h2>Assigned to:</h2>
+		<h3 th:text="${firstName}" style="color: gray"></h3>
+		<h3 th:text="${lastName}" style="color: gray"></h3>
+		
+
+		
+		
+	<table>
+	
+	
+
+		<tr>
+			<td><br><a th:href="'/projects/' + ${projectId} + '/task/'+ ${task.id} + '/edit'"><button type="submit">Edit Task</button></a></td>
+		</tr>
+		
+		<tr>
+			<td><br><a th:href="'/projects/'+ ${projectId}"><button type="submit">Back to Project</button></a></td>
+		</tr>
+		
+		<tr>
+			<td><br><a href="/projects"><button type="submit">My Projects</button></a></td>
+		</tr>
+		
+		<tr>
+			<td><a href="/home"><button type="submit">Home</button></a></td>
+		</tr>
+	</table>
+</body>
+</html>

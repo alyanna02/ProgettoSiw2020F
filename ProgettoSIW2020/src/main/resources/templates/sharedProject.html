@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ProgettoSIW</title>
+</head>
+<body>
+  <h1 th:text="${project.name}"></h1>
+  <h4 th:text="${project.description}" style="color: gray"></h4>
+
+  <div th:if="${members.size() > 0}">
+    <h3>Shared with:</h3>
+    <ul>
+      <li th:each="member : ${members}">
+        <div th:text="${member.firstName} + ' ' + ${member.lastName}"></div>
+      </li>
+    </ul>
+  </div>
+  <!--  -->
+  <h3>Task</h3>
+  <ul>
+    <li th:each="task: ${listaMieiTask}">
+      <div> <a th:href="'/sharedprojects/' + ${project.id} + '/task/' + ${task.id}"
+            th:text="${task.name}">...</a></div>
+      
+      <div th:text="${task.description}" style=""></div>
+    </li>
+  </ul>
+  <table>
+
+    <tr>
+      <td><a href="/projects"><button type="submit">My Projects</button></a></td>
+    </tr>
+    <tr>
+      <td><a href="/home"><button type="submit">Home</button></a></td>
+    </tr>
+  </table>
+</body>
+</html>

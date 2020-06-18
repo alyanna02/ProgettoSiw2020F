@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ProgettoSIW</title>
+</head>
+<body>
+  <h1>Share Project</h1>
+  
+  <form id="shareProjectForm" th:action="@{'/projects/'+${projectId}+'/share'}" method="POST" th:object="${project}">
+  
+
+  <!--  
+  
+  
+  
+  <h3>Add/Share Members</h3>
+  <ul>
+    <li th:each="user: ${usersList}">
+      <div><input type="checkbox" th:value="${user.id}" th:field="*{members}" /></div>
+      <div th:text="${user.lastName} +' '+ ${user.firstName}" style=""></div>
+    </li>
+  </ul>
+  -->
+  
+ <input type ="text" id="credTemp" placeholder="SEARCH"
+					required th:field="${credTemp.userName}" />
+  
+  <button type="submit">Register Members</button>
+  
+  </form>
+  
+  <table>
+
+        <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a th:href="'/projects/'+ ${projectId}"><button type="submit">Back</button></a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="/projects"><button type="submit">My Projects</button></a></td>
+    </tr>
+    <tr>
+      <td><a href="/home"><button type="submit">Home</button></a></td>
+    </tr>
+      </table>
+</body>
+</html>

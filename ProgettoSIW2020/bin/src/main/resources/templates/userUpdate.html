@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>ProgettoSIW</title>
+</head>
+<body>
+	<h1>Edit your Profile</h1>
+	<form id="userUpdateForm" th:action="@{/users/me/edit}"
+		method="POST">
+
+		<table>
+			<tr>
+				<td><label for="firstNameInput">First Name</label></td>			
+				<td><input id="firstNameInput" type="text" placeholder="FIRST NAME"
+					required th:field="${userTemp.firstName}" /></td>
+				<td th:if="${#fields.hasErrors('userTemp.firstName')}"
+					th:errors="${userTemp.firstName}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td><label for="lastNameInput">Last Name</label></td>			
+				<td><input id="lastNameInput" type="text" placeholder="LAST NAME"
+					required th:field="${userTemp.lastName}" /></td>
+				<td th:if="${#fields.hasErrors('userTemp.lastName')}"
+					th:errors="${userTemp.lastName}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit">Update</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

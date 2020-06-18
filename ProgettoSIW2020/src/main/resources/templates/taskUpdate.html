@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>ProgettoSIW</title>
+</head>
+<body>
+	<h1>Edit your Task</h1>
+	<form id="taskUpdateForm" th:action="@{'/projects/' + ${projectId} + '/task/' + ${taskId} + '/edit'}"
+		method="POST">
+
+		<table>
+			<tr>
+				<td><label for="firstNameInput">Task Name</label></td>			
+				<td><input id="firstNameInput" type="text" placeholder="TASK NAME"
+					required th:field="${taskTemp.name}" /></td>
+				<td th:if="${#fields.hasErrors('taskTemp.name')}"
+					th:errors="${taskTemp.name}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td><label for="lastNameInput">Task Description</label></td>			
+				<td><input id="lastNameInput" type="text" placeholder="TASK DESCRIPTION "
+					required th:field="${taskTemp.description}" /></td>
+				<td th:if="${#fields.hasErrors('taskTemp.description')}"
+					th:errors="${taskTemp.description}" th:style="'color:red'"></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit">Update</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

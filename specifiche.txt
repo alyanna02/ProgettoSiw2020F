@@ -1,0 +1,92 @@
+Casi d'uso: User
+
+Caso d'uso : Aggiornare il mio profilo
+1)Un Utente autenticato usa il Sistema per aggiornare il proprio profilo.
+2)L'Utente sceglie l'attività "Profile". Il Sistema mostra i vari dati dell' Utente compreso: username, nome, cognome, ruolo, la data in cui questo Utente è stato creato e la data dell'ultimo aggiornamento per questo Utente nel DB
+3)L'Utente sceglie l'attività "Edit Profile". Il Sistema mostra la pagina dove poter aggiornare i propri dati.
+4)L'Utente inserisce il nuovo nome e cognome da aggiornare.
+Il Sistema verifica la correttezza dei dati immessi e aggiorna il profilo dell' Utente.
+
+
+Casi d'uso: Project
+
+Caso d'uso : Aggiornare i dati di un mio progetto
+1)Un Utente autenticato usa il Sistema per aggiornare i dati di un proprio progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+4)L'Utente sceglie l'attività "Edit Project".
+5)L'Utente inserisce il nuovo nome e cognome da aggiornare.
+Il Sistema verifica la correttezza dei dati immessi e aggiorna il Progetto dell'Utente.
+
+Caso d'uso : Cancellare un mio progetto
+1)Un Utente autenticato usa il Sistema per cancellare un proprio progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio progetto da cancellare.
+Il Sistema registra l'operazione e rimuove il Progetto selezionato.
+
+
+Caso d'uso : Condividere un mio progetto con un altro utente
+1)Un Utente autenticato usa il Sistema per condividere un proprio progetto con un altro Utente registrato nel Sistema.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio Progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+4)L'Utente sceglie l'attività "Add members".
+5)L'Utente inserisce lo username dell' Utente a cui vuole condividere il proprio Progetto.
+
+
+Casi d'uso: Task
+
+Caso d'uso : Aggiungere un nuovo Task a un mio progetto
+1)Un Utente autenticato usa il Sistema per aggiungere un nuovo Task ad un proprio Progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un Proprio progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+4)L'Utente sceglie l'attività "add Task".
+5)L'Utente inserisce il nome e la descrizione del Task. Il Sistema verifica la correttezza dei dati immessi e aggiunge il Task. Il Sistema mostra la pagina del Task appena aggiunto con il nome e la decrizione.
+
+Caso d'uso : Aggiornare un Task di un mio progetto
+1)Un Utente autenticato usa il Sistema per aggiornare un Task ad un proprio Progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio Progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+4)L'Utente sceglie (selezionandolo da un elenco) un proprio Task da aprire. Il Sistema mostra la pagina del Task con il nome e la decrizione.
+5)L'Utente sceglie l'attività "Edit Task".
+6)L'Utente inserisce il nome e la descrizione da aggiornare.
+Il Sistema verifica la correttezza dei dati immessi e aggiorna il Task dell'Utente.
+
+Caso d'uso : Cancellare un Task da un mio progetto
+1)Un Utente autenticato usa il Sistema per cancellare un proprio progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio Progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio Task da cancellare.
+Il Sistema registra l'operazione e rimuove il Task selezionato.
+
+Caso d'uso : Assegnare un Task di un mio progetto ad un utente che ha visibilità sul mio progetto
+1)Un Utente autenticato usa il Sistema per cancellare un proprio progetto.
+2)L'Utente sceglie l'attività "My Projects". Il Sistema mostra la lista dei Progetti creati dall'Utente.
+3)L'Utente sceglie (selezionandolo da un elenco) un proprio Progetto da aprire. Il Sistema mostra il Progetto selezionato con i relativi dati.
+4)L'Utente sceglie (selezionandolo da un elenco) un proprio Task da aprire. Il Sistema mostra la pagina del Task con il nome e la decrizione.
+5)L'Utente sceglie l'attività "Assign Task".
+6)L'Utente inserisce lo username dell' Utente a cui vuole condividere il proprio Task.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
